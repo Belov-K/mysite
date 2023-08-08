@@ -9,7 +9,7 @@ class Post(models.Model):
     """
     STATUC_CHOICES=(
         ('draft', 'Draft'),
-        ('publishe', 'Published'),
+        ('published', 'Published'),
     )
     title=models.CharField(max_length=250)
     slug=models.SlugField(max_length=250, unique_for_date='publish')
